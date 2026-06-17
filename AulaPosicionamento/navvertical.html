@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navegação Vertical</title>
+    <style>
+      #menu ul {
+        width: 200px;
+        padding: 0px;
+        list-style-type: none;
+      }
+      #menu li a {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 1.5em;
+        color: black;
+        background: orange url("img/seta.png") no-repeat 0.5em center;
+      }
+      #menu li a:hover {
+        padding-left: 2.5em;
+        color: white;
+        background: darkorange url("img/seta.png") no-repeat 1.5em center;
+      }
+      #menu li a:active {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Menu de navegação</h1>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
