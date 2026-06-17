@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear</title>
+    <style>
+      #principal {
+        border: 1px solid red;
+        width: 920px;
+        margin: 0 auto;
+      }
+      #principal::after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .noticia {
+        background-color: lightgray;
+        padding: 5px;
+        width: 280px;
+        margin: 7px;
+        float: left;
+      }
+      #rodape {
+        border: none;
+        width: 900px;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="principal">
+        <div class="noticia">
+          <h2>Lorem ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            voluptatibus atque eligendi neque, officia cum ullam corrupti,
+            accusamus culpa voluptatum nulla ut laboriosam esse labore
+            repudiandae, expedita laudantium eum minima.
+          </p>
+        </div>
+        <div class="noticia">
+          <h2>Lorem ipsum 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            voluptatibus atque eligendi neque, officia cum ullam corrupti,
+            accusamus culpa voluptatum nulla ut laboriosam esse labore
+            repudiandae, expedita laudantium eum minima.
+          </p>
+        </div>
+        <div class="noticia">
+          <h2>Lorem ipsum 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            voluptatibus atque eligendi neque, officia cum ullam corrupti,
+            accusamus culpa voluptatum nulla ut laboriosam esse labore
+            repudiandae, expedita laudantium eum minima.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="rodape">
+      <h3>Todos direitos reservados</h3>
+    </div>
+  </body>
+</html>

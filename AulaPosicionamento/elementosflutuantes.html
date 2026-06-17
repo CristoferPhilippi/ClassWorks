@@ -6,39 +6,47 @@
     <title>Elementos flutuantes</title>
 
     <style>
-      p {
-        border: 1px solid red;
-        background-color: aquamarine;
+      #principal {
+        width: 920px;
       }
-
-      img {
-        border: 1px solid blue;
+      .noticia {
+        background-color: lightgray;
+        padding: 5px;
+        width: 280px;
+        margin: 7px;
         float: left;
-      }
-
-      .caixa {
-        background-color: aquamarine;
-        width: 180px;
-        height: 180px;
-        border: 1px solid red;
-        margin: 3px;
-      }
-
-      .esquerda {
-        float: left;
-      }
-      .direita {
-        float: right;
       }
     </style>
   </head>
   <body>
-    <div class="caixa esquerda">Caixa 1</div>
-    <div class="caixa esquerda" style="height: 400px">Caixa 2</div>
-    <div class="caixa esquerda">Caixa 3</div>
-    <div class="caixa esquerda">Caixa 4</div>
-    <div class="caixa esquerda">Caixa 5</div>
-    <div class="caixa esquerda">Caixa 6</div>
-    <div class="caixa esquerda">Caixa 7</div>
+    <div id="principal">
+      <div class="noticia">
+        <h2>Lorem ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          voluptatibus atque eligendi neque, officia cum ullam corrupti,
+          accusamus culpa voluptatum nulla ut laboriosam esse labore
+          repudiandae, expedita laudantium eum minima.
+        </p>
+      </div>
+      <div class="noticia">
+        <h2>Lorem ipsum 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          voluptatibus atque eligendi neque, officia cum ullam corrupti,
+          accusamus culpa voluptatum nulla ut laboriosam esse labore
+          repudiandae, expedita laudantium eum minima.
+        </p>
+      </div>
+      <div class="noticia">
+        <h2>Lorem ipsum 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          voluptatibus atque eligendi neque, officia cum ullam corrupti,
+          accusamus culpa voluptatum nulla ut laboriosam esse labore
+          repudiandae, expedita laudantium eum minima.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
