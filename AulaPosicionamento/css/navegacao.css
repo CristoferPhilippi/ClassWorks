@@ -18,3 +18,12 @@
 #menu li a:active {
   background-color: brown;
 }
+
+#home #menu li.home a,
+#produtos #menu li.produtos a,
+#carrinho #menu li.carrinho a,
+#contato #menu li.contato a {
+  padding-left: 2.5em;
+  color: white;
+  background: darkorange url("../img/seta.png") no-repeat 1.5em center;
+}
