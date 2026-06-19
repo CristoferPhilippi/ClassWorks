@@ -1,0 +1,20 @@
+#menu ul {
+  width: 200px;
+  padding: 0px;
+  list-style-type: none;
+}
+#menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1.5em;
+  color: black;
+  background: orange url("../img/seta.png") no-repeat 0.5em center;
+}
+#menu li a:hover {
+  padding-left: 2.5em;
+  color: white;
+  background: darkorange url("../img/seta.png") no-repeat 1.5em center;
+}
+#menu li a:active {
+  background-color: brown;
+}
