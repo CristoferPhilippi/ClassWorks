@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navegação Vertical - Home</title>
+    <style>
+      #menu ul {
+        width: 720px;
+        padding: 0px;
+        list-style-type: none;
+        background-color: #24252a;
+        border: 1px solid black;
+      }
+      #menu ul::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      #menu li a {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 1.5em;
+        color: white;
+        background: url("") no-repeat 0.5em center;
+        float: left;
+        margin: 0 0.5em;
+      }
+      #menu li a:hover {
+        background-color: purple;
+        border-radius: 1.2em;
+      }
+      #menu li a:active {
+        background-color: white;
+        color: #0582ac;
+      }
+      #home #menu li.home a,
+      #produtos #menu li.produtos a,
+      #carrinho #menu li.carrinho a,
+      #contato #menu li.contato a {
+        padding-left: 2.5em;
+        color: white;
+        background: peru url("img/seta.png") no-repeat 1.5em center;
+        border-radius: 1.2em;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <h1>Menu de navegação horizontal (home)</h1>
+
+    <div id="menu">
+      <ul>
+        <li class="home">
+          <a href="#">Home</a>
+        </li>
+        <li class="produtos">
+          <a href="#">Produtos</a>
+        </li>
+        <li class="carrinho">
+          <a href="#">Carrinho</a>
+        </li>
+        <li class="contato">
+          <a href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Conteúdo</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati at,
+        non mollitia, ipsum modi officiis quia quam saepe nemo nam, rerum
+        dignissimos. Cum repellat et illo sint voluptate alias quis? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Perferendis assumenda
+        pariatur voluptatem! Nihil explicabo quidem quae, voluptatem
+        reprehenderit, incidunt animi suscipit eum maiores earum alias
+        consequuntur corrupti, minus eos in. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Odio quibusdam id recusandae natus non
+        eligendi, omnis error cum, possimus eum modi? A suscipit velit esse?
+        Dolores molestias eveniet dignissimos ab.
+      </p>
+    </div>
+  </body>
+</html>
