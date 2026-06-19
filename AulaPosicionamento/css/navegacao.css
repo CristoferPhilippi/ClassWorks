@@ -25,5 +25,5 @@
 #contato #menu li.contato a {
   padding-left: 2.5em;
   color: white;
-  background: darkorange url("../img/seta.png") no-repeat 1.5em center;
+  background: rgba(0, 0, 0, 0.61) url("../img/seta.png") no-repeat 1.5em center;
 }
