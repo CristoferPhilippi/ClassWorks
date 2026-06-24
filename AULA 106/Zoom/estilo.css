@@ -8,3 +8,6 @@ nav {
   display: flex;
   justify-content: center;
 }
+.teste {
+  float: none;
+}
