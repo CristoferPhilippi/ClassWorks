@@ -1,13 +1,42 @@
 header {
   display: flex;
   align-items: center;
+  padding: 0 10px;
 }
 nav {
-  border: 1px solid red;
   flex-grow: 1;
+}
+nav ul {
   display: flex;
+  list-style: none;
   justify-content: center;
 }
-.teste {
-  float: none;
+ul a:link,
+a:visited {
+  padding: 10px;
+  text-decoration: none;
+  color: #484848;
+}
+
+ul a:hover {
+  color: #0b5cff;
+}
+
+.botao {
+  text-decoration: none;
+  color: #0b5cff;
+  border: 2px solid #0b5cff;
+  padding: 5px 30px;
+  border-radius: 25px;
+}
+.botao:hover {
+  background-color: #afc8f9;
+}
+.botao.destaque {
+  background-color: #0b5cff;
+  color: #ffffff;
+}
+.botao.destaque:hover {
+  background-color: #2b70f9;
+  color: #ffffff;
 }
