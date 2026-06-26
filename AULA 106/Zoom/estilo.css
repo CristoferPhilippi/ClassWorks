@@ -1,7 +1,42 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "capa-conteudo capa-imagem"
+    "org-imagem org-conteudo";
+  row-gap: 20px;
+  column-gap: 20px;
+}
 header {
+  border: 1px solid red;
+  grid-area: cabecalho;
   display: flex;
   align-items: center;
   padding: 0 10px;
+}
+section#capa-conteudo {
+  border: 1px solid red;
+  grid-area: capa-conteudo;
+}
+section#capa-imagem {
+  border: 1px solid red;
+  grid-area: capa-imagem;
+}
+
+section#org-conteudo {
+  border: 1px solid red;
+  grid-area: org-conteudo;
+}
+section#org-imagem {
+  border: 1px solid red;
+  grid-area: org-imagem;
+}
+section#capa-imagem > img,
+section#org-imagem > img {
+  max-width: 100%;
 }
 nav {
   flex-grow: 1;
