@@ -11,32 +11,40 @@
   column-gap: 20px;
 }
 header {
-  border: 1px solid red;
   grid-area: cabecalho;
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 section#capa-conteudo {
-  border: 1px solid red;
   grid-area: capa-conteudo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section#capa-imagem {
-  border: 1px solid red;
   grid-area: capa-imagem;
 }
 
 section#org-conteudo {
-  border: 1px solid red;
   grid-area: org-conteudo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section#org-imagem {
-  border: 1px solid red;
   grid-area: org-imagem;
 }
 section#capa-imagem > img,
 section#org-imagem > img {
   max-width: 100%;
+}
+footer {
+  background: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
 }
 nav {
   flex-grow: 1;
@@ -62,6 +70,7 @@ ul a:hover {
   border: 2px solid #0b5cff;
   padding: 5px 30px;
   border-radius: 25px;
+  align-self: flex-start;
 }
 .botao:hover {
   background-color: #afc8f9;
@@ -73,4 +82,25 @@ ul a:hover {
 .botao.destaque:hover {
   background-color: #2b70f9;
   color: #ffffff;
+}
+/* Tipografia */
+body {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+.texto-destaque {
+  color: #0b5cff;
+  font-weight: bolder;
 }
